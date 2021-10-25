@@ -470,7 +470,7 @@ def get_args():
     parser.add_argument('--phase', choices=['train','test'], default='train')
     parser.add_argument('--dataset_path', default=r'/home/changwoo/hdd/datasets/mvtec_anomaly_detection2') # 'D:\Dataset\mvtec_anomaly_detection')#
     parser.add_argument('--category', default='bottle')
-    parser.add_argument('--num_epochs', default=1)
+    parser.add_argument('--num_epochs', type=int, default=1)
     parser.add_argument('--batch_size', default=1)
     parser.add_argument('--load_size', default=256) # 256
     parser.add_argument('--input_size', default=224)
