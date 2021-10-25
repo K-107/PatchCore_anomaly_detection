@@ -462,7 +462,7 @@ class STPM(pl.LightningModule):
         fig.legend(labels=['normal', 'abnormal'])
         plt.xlabel("Anomaly score")
         plt.ylabel("Count")
-        plt.savefig('Anomaly_score_histplot.jpg')
+        plt.savefig(f'histplot_for_anomaly_map/{args.category}_Anomaly_Score_Histplot.jpg')
 
 
 def get_args():
